@@ -43,7 +43,7 @@
 				const baseUrl = 'http://www.bing.com';
 				const response = await fetch('/api');
 				const json = await response.json();
-				const imageUrl = baseUrl + json.images[0].url;
+				const imageUrl = baseUrl + json.images[0].urlbase + '_UHD.jpg';
 				document.querySelector('#photo').style.backgroundImage = `url(${imageUrl})`;
 			}
 
